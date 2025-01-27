@@ -1,13 +1,17 @@
 {
   "name": "countdown",
   "private": true,
+  "homepage": "https://pedropaa2.github.io/Countdown",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -27,6 +31,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "vite": "^6.0.5"
   }
